@@ -1,7 +1,10 @@
-# Custom RC transmitter with touchscreen - Arduino/ESP32
+# RC transmitter PCB with touchscreen - Arduino/ESP32
 ![Alt text](/images/rc_pcb_1.jpeg)
+
 ![Alt text](/images/rc_pcb_perspectives.png)
+
 ![Alt text](/images/rc_pcb_2.jpg)
+
 ![Alt text](/images/rc_pcb_3.jpg)
 
 ## Project overview
@@ -57,6 +60,7 @@ To create the embedded UI design of the touchscreen, the SquareLine Studio platf
 - Step 4: Click the "upload" button in PlatformIO to upload the code to the ESP32S3. The modified UI should now appear on the touchscreen. 
 
 Three screens have been implemented in the embedded UI: Control, Monitor and Configuration.
+
 ![Alt text](/images/embedded_UI_designs.png)
 
 ### Hardware and schematics
@@ -66,10 +70,12 @@ The RC hardware includes an ESP32S3 development board that is responsible for ma
 
 The touchscreen model is the ESP32S3_8048S043, with a resolution of 800 x 480 px and 4.3" screen size. This model has an ESP32S3 and I/O connectors built in.
 
-This is the [schematic](esp32s3_touchscreen_schematic-pcb_remote.pdf) of the "ESP32S3 touchscreen" block. The [EasyEDA PCB design](remote_control_pcb_design_easyeda.json) can be seen as the schematic of the "Arduino Nano" block. 
+This is the [schematic](esp32s3_touchscreen_schematic-rc_pcb.pdf) of the "ESP32S3 touchscreen" block. The [EasyEDA PCB design](remote_control_pcb_design_easyeda.json) can be seen as the schematic of the "Arduino Nano" block. 
 
 Here are a couple images of the top and bottom layers of the EasyEDA PCB design:
+
 ![Alt text](/images/rc_pcb_design_front.png)
+
 ![Alt text](/images/rc_pcb_design_back.png)
 
 #### PCB manufacturing
@@ -77,17 +83,29 @@ To manufacture the PCB, a [Gerber fabrication file](remote_control_pcb_gerber.zi
 
 
 ### 2D and 3D designs
-This [Fusion360 design file](2d-3d_designs/rc-pcb-spacers-and-touchscreen-case.f3d) contains the 3D printable parts: the spacers that hold the acrylic plates and PCB together, the structure that holds the touchscreen, and the case for the ESP32S3-8048 touchscreen. This case is a modified version of a [case design](https://www.thingiverse.com/thing:6517481) found on Thingiverse.
+This [Fusion360 design file](2d-3d_designs/rc_pcb_spacers_and_touchscreen_case.f3d) contains the 3D printable parts: the spacers that hold the acrylic plates and PCB together, the structure that holds the touchscreen, and the case for the ESP32S3-8048 touchscreen. This case is a modified version of a [case design](https://www.thingiverse.com/thing:6517481) found on Thingiverse.
 
 ![Alt text](/images/rc_pcb_spacers_and_case.png)
 
 Other parts of the remote control that have to be manufactured are the top and bottom acrylic plates, which should be cut using a laser or CNC machine. In my case, I used a workshop near my home that had a laser machine, but there are also online websites where you can order laser cut designs in acrylic. These are the 2D designs for the [top](2d-3d_designs/rc_top_plate.dxf) and [bottom](2d-3d_designs/rc_bottom_plate.dxf) acrylic plates. I would recommend using 3mm clear acrylic. 
 
-## Getting started steps
 
-//TODO: Order from components_list.txt. Follow Technical implementation details...
-//Maybe put getting started just over "technical implementation details" section 
+## Getting started steps
+- Step 1: Order all the mechanical and hardware components. A list with the most important components is provided [here](components_list.txt). The estimated cost of all the components is around 120€.
+
+- Step 2: 3D print the remote controller's parts present in this [Fusion360 design file](2d-3d_designs/rc_pcb_spacers_and_touchscreen_case.f3d). Cut the [top](2d-3d_designs/rc_top_plate.dxf) and [bottom](2d-3d_designs/rc_bottom_plate.dxf) acrylic plates using a laser or CNC machine. 
+
+- Step 3: Create the wiring connections for the "ESP32S3 touchscreen" block, following this [schematic](esp32s3_touchscreen_schematic-rc_pcb.pdf). Solder pin headers to the necessary hardware components, so that they can be placed on the PCB and connected to the PCB's pads. Solder the PCB pads of the bottom layer, fixing the components in place. Some images detailing this process are available in the [assembly folder](assembly/).
+
+- Step 4: Assemble the 3D printed parts and acrylic plates onto the PCB. The [Fusion360 design file](2d-3d_designs/rc_pcb_spacers_and_touchscreen_case.f3d) can serve as a guide. 
+
+- Step 5: Set up and upload the code to the development boards, following the ["Technical implementation details"](#technical-implementation-details) section.
+
 
 ## Demos
+![Alt text](/images/rc_pcb_control_screen_demo.gif)
 
-//Put RC PCB GIF. Crop existing touchscreen gifs (so only touchscreen is seen?)
+![Alt text](/images/monitor_screen_demo.gif)
+
+## Licensing
+Licensed under [MIT License](LICENSE.txt)

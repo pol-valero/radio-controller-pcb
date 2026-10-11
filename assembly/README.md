@@ -1,6 +1,7 @@
 # Hardware and mechanical assembly
-| ![](/images/assembly_images/assembly1.jpeg) | ![](/images/assembly_images/assembly2.jpeg) |
+| ![](/images/assembly_images/assembly10.png) | ![](/images/assembly_images/assembly11.png) |
 | -------------------------- | ---------------------- |
+| ![](/images/assembly_images/assembly1.jpeg) | ![](/images/assembly_images/assembly2.jpeg) |
 | ![](/images/assembly_images/assembly3.jpeg) | ![](/images/assembly_images/assembly4.jpeg) |
 | ![](/images/assembly_images/assembly5.jpeg) | ![](/images/assembly_images/assembly6.jpeg) |
 | ![](/images/assembly_images/assembly7.jpeg) | ![](/images/assembly_images/assembly8.jpeg) |
