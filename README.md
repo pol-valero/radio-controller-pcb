@@ -34,7 +34,11 @@ To program Arduino and ESP32 microcontrollers, the PlatformIO IDE with the Ardui
 ### Remarks
 This repository contains the code and documentation of all the parts of the remote controller. However, the codebase is actually distributed across different repositories:
 
-//TODO
+- The folder ``arduino_nano_code/`` contains the [openrover-rc-transmitter-pcb](https://github.com/pol-valero/openrover-rc-transmitter-pcb) repository. 
+
+- The folder ``esp32s3_code/`` contains the [openrover-rc-touchscreen](https://github.com/pol-valero/openrover-rc-touchscreen.git) repository. 
+
+- The folder ``touchscreen_ui_design_squareline/`` contains the [openrover-touchscreen-ui-design](https://github.com/pol-valero/openrover-touchscreen-ui-design.git) repository. 
 
 "Git subtrees" were used to link these independent repositories to folders inside this central ```radio-controller-pcb``` repository.
 
