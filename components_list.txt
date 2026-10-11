@@ -1,0 +1,35 @@
+MAIN HARDWARE COMPONENTS
+- Buzzer (x1)
+- ESP32S3_8048S043 IPS touchscreen (x1)
+- 5-pin JST-XH male and female connectors (x1)
+- Spiral plastic sleeve for wires (as needed)
+- JH-D202X joystick (x2)
+- Arduino Nano (x1)
+- NRF24L01 transceiver module (x1)
+- NRF24L01 3.3V regulator (x1)
+- Colored wires (as needed)
+- SS-12D10 switch (x1)
+- Toggle switch 20A (x2)
+- Push button (x1)
+- 4-channel logic level converter (x1)
+- 100 ohm resistors (x1), 1k ohm resistors (x2)
+- Double AAA battery holder (x2)
+- Rechargeable AAA 1.2V 750mAh NiMH battery (x4)
+- Manufactured double-layer PCB (x1)
+
+MAIN MECHANICAL COMPONENTS
+Bolts:
+- M3 x 8mm - 6 - preferably with flattened head (ISO-7380)
+- M3 x 10mm - 4 - preferably with flattened head (ISO-7380)
+- M3 x 12mm - 4
+- M3 x 16mm - 1
+Other parts:
+- M3 threaded insert - 20 (approximate)
+- Laser/CNC cut top and bottom acrylic plate - 3mm thick - see 2D .dxf designs inside the "2d-3d_designs/" folder
+
+
+Most of these hardware and mechanical components were purchased on Aliexpress, but a lot of them are also available on Amazon.
+
+The estimated cost of all the mechanical and hardware components is around 120€. 
+This cost does not include the tools that are necessary to build the remote controller (e.g., soldering iron, power supply for tests, multimeter).
+
